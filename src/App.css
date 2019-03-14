@@ -1,33 +1,82 @@
-.App {
-  text-align: center;
+:root {
+  --lightPurple: #98878f;
+  --purple: #985e6d;
+  --lightBlue: #494e6b;
+  --darkBlue: #192231;
+  --white: #ffffff;
+
+  --headingFont: 'Major Mono Display', monospace;
+  --bodyFont: 'Roboto Mono', monospace;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 125%;
+  /*
+    62.5% = units of 10px
+    93.7% = units of 15px
+    125% = units of 20px
+     */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: var(--bodyFont);
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section .wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 40px;
+  color: var(--darkBlue);
+  width: 100%;
+}
+
+.flexParent {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.imgContainer {
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: var(--headingFont);
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+p,
+li {
+  font-size: 0.9rem;
+}
+
+.box {
+  width: 100%;
+  height: 200px;
 }

@@ -1,0 +1,23 @@
+@import './setup.css';
+@import '../App.css';
+
+.about .imgContainer {
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.about ul {
+  padding: 15px 0 25px 0;
+}
+
+.about li {
+  margin-bottom: 15px;
+}
+
+.about ul li:before {
+  content: '\25D7';
+  color: var(--purple);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+}

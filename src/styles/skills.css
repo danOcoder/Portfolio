@@ -1,0 +1,6 @@
+@import './setup.css';
+@import '../App.css';
+
+.lBox {
+  background-color: purple;
+}
