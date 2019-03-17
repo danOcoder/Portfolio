@@ -4,7 +4,6 @@
 .footer {
   background-color: var(--purple);
   padding-top: 30px;
-  border: 1px solid dodgerblue;
 }
 
 .socials {
@@ -12,7 +11,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
 }
 
 .socials li a {
@@ -35,4 +34,22 @@
 
 .email {
   margin-bottom: 20px;
+}
+
+/**** screen meets or exceeds 768px ****/
+
+@media (min-width: 768px) {
+  .socials {
+    width: 70%;
+  }
+}
+
+/**** screen meets or exceeds 992px****/
+
+@media (min-width: 992px) {
+}
+
+/**** screen meets or exceeds 1400px ****/
+
+@media (min-width: 1400px) {
 }

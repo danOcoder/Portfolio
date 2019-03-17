@@ -30,3 +30,74 @@
 .iconContainer3 {
   background-color: var(--lightBlue);
 }
+
+/**** screen meets or exceeds 480px****/
+
+@media (min-width: 480px) {
+}
+
+/**** screen meets or exceeds 768px ****/
+
+@media (min-width: 768px) {
+  .skills .imgContainer {
+    flex-basis: 25%;
+  }
+
+  .skills .imgContainer:nth-of-type(1) {
+    order: 2;
+  }
+
+  .skills .imgContainer:nth-of-type(2) {
+    order: 1;
+  }
+
+  .skills .imgContainer:nth-of-type(3) {
+    order: 3;
+  }
+  .skills .imgContainer:nth-of-type(4) {
+    order: 4;
+  }
+
+  .skills .imgContainer:nth-of-type(5) {
+    order: 5;
+  }
+
+  .skills .imgContainer:nth-of-type(6) {
+    order: 6;
+  }
+
+  .skills .imgContainer:nth-of-type(7) {
+    order: 8;
+  }
+  .skills .imgContainer:nth-of-type(8) {
+    order: 7;
+  }
+
+  .skills .imgContainer:nth-of-type(9) {
+    order: 10;
+  }
+  .skills .imgContainer:nth-of-type(10) {
+    order: 9;
+  }
+
+  .skills .imgContainer:nth-of-type(11) {
+    order: 11;
+  }
+  .skills .imgContainer:nth-of-type(12) {
+    order: 12;
+  }
+
+  .skills .imgContainer:nth-of-type(13) {
+    order: 13;
+  }
+  .skills .imgContainer:nth-of-type(14) {
+    order: 14;
+  }
+
+  .skills .imgContainer:nth-of-type(15) {
+    order: 16;
+  }
+  .skills .imgContainer:nth-of-type(16) {
+    order: 15;
+  }
+}

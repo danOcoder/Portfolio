@@ -51,9 +51,6 @@ class Work extends Component {
           </div>
           <ul className='workIcons'>
             <li>
-              <NavLink exact to='/work/' />
-            </li>
-            <li>
               <NavLink to='/work/html' activeClassName='active'>
                 <FontAwesomeIcon icon={faHtml5} />
               </NavLink>

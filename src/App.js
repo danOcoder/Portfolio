@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { Route, NavLink, Switch, Redirect, withRouter } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import About from './components/About.js';
 import Work from './components/Work.js';
 import Contact from './components/Contact.js';
@@ -21,14 +22,14 @@ class App extends Component {
                 <div className='imgContainer'>
                   <img src={logo3} alt='Dan OConnor Web Development logo' />
                 </div>
-                <h1>Dan O'Connor</h1>
+                <h1>
+                  Dan <br />
+                  O'Connor
+                </h1>
                 <h2>Web Development</h2>
               </header>
               <nav>
                 <ul className='navList'>
-                  <li>
-                    <NavLink to='/' />
-                  </li>
                   <li>
                     <NavLink to='/skills' activeClassName='active'>
                       Skills
@@ -53,17 +54,25 @@ class App extends Component {
               </nav>
             </div>
           </div>
-          <div className='section'>
-            <Switch>
-              <Route exact path='/' component={Skills} />
-              <Route exact path='/skills' component={Skills} />
-              <Route path='/about' component={About} />
-              <Route path='/work' component={Work} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/thanks' component={Thanks} />
-              <Redirect to='/' />
-            </Switch>
-          </div>
+          <TransitionGroup className='transition-group'>
+            <CSSTransition
+              key={location.key}
+              timeout={{ enter: 300, exit: 300 }}
+              classNames='fade'
+            >
+              <div className='section'>
+                <Switch>
+                  <Route exact path='/' component={Skills} />
+                  <Route exact path='/skills' component={Skills} />
+                  <Route path='/about' component={About} />
+                  <Route path='/work' component={Work} />
+                  <Route path='/contact' component={Contact} />
+                  <Route path='/thanks' component={Thanks} />
+                  <Redirect to='/' />
+                </Switch>
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
         </div>
         <Footer />
       </div>
