@@ -65,7 +65,7 @@ img {
 
 .contact .imgContainer,
 .about .imgContainer,
-.workIcons {
+.work .imgContainer {
   margin-bottom: 30px;
 }
 
@@ -85,12 +85,11 @@ p {
   margin-bottom: 20px;
 }
 
+a {
+  color: var(--darkBlue);
+}
+
 p,
 li {
   font-size: 0.9rem;
-}
-
-.box {
-  width: 100%;
-  height: 200px;
 }

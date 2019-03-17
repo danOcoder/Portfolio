@@ -4,7 +4,7 @@ import profilePic from '../assets/profilePicKracked.jpg';
 import html from '../assets/svg/html.svg';
 import ny from '../assets/ny.jpg';
 import css from '../assets/svg/css.svg';
-import donuts from '../assets/donut.jpg';
+import cup from '../assets/weirdCupStuff.jpg';
 import js from '../assets/svg/js.svg';
 import react from '../assets/svg/react.svg';
 import museum from '../assets/museum.jpg';
@@ -37,7 +37,7 @@ class Skills extends Component {
             <img src={ny} alt='New York City Scape' />
           </div>
           <div className='imgContainer'>
-            <img src={donuts} alt='2 pink frosted donuts' />
+            <img src={cup} alt='2 pink frosted donuts' />
           </div>
           <div className='imgContainer iconContainer3'>
             <img src={js} alt='javascript logo' />
