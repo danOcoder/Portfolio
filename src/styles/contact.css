@@ -1,6 +1,83 @@
 @import './setup.css';
 @import '../App.css';
 
-.contactBox {
-  background-color: dodgerblue;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* input#name,
+input#phoneNumber,
+input#email {
+  width: calc(33.33% - 20px);
+} */
+
+input#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+input#name,
+input#email,
+input#phoneNumber,
+textarea#specialInstructions {
+  border-radius: 0 0 0 3px;
+}
+
+input#submit {
+  border-radius: 3px;
+  border: none;
+  background-color: var(--darkBlue);
+  color: var(--purple);
+  padding: 10px;
+}
+
+input#submit:active {
+  background-color: var(--purple);
+  color: var(--darkBlue);
+}
+
+input#name,
+input#email,
+input#phoneNumber,
+textarea#specialInstructions {
+  margin-bottom: 60px;
+  width: 100%;
+  font-family: var(--bodyFont);
+  font-size: 0.9rem;
+  padding: 20px;
+  border: none;
+  border-left: 1.5px solid var(--darkBlue);
+  border-bottom: 1.5px solid var(--darkBlue);
+  color: var(--darkBlue);
+  background: var(--white);
+}
+
+input::placeholder,
+textarea::placeholder {
+  border: 1px solid blue;
+  color: var(--purple);
+}
+
+.floatedLabelInput {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+label.activeField {
+  opacity: 1;
+  color: var(--purple);
+}
+
+.thanksText {
+  margin-top: 80px;
+  text-align: center;
 }

@@ -34,9 +34,16 @@ body {
 }
 
 .section {
-  margin-top: 40px;
   color: var(--darkBlue);
   width: 100%;
+  min-height: 100vh;
+  border: 1px solid plum;
+}
+
+.about,
+.contact,
+.work {
+  margin: 50px 0 60px;
 }
 
 .flexParent {
@@ -47,12 +54,19 @@ body {
 .imgContainer {
   overflow: hidden;
   margin: 0 auto;
+  border-radius: 3px;
 }
 
 img {
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+.contact .imgContainer,
+.about .imgContainer,
+.workIcons {
+  margin-bottom: 30px;
 }
 
 h1 {

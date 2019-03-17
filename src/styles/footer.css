@@ -3,6 +3,8 @@
 
 .footer {
   background-color: var(--purple);
+  padding-top: 30px;
+  border: 1px solid dodgerblue;
 }
 
 .socials {
@@ -10,12 +12,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .socials li a {
   font-size: 1.7rem;
-  padding: 0 10px;
-  margin: 0;
+  padding: 5px 10px;
 }
 
 .socials li a:hover {
@@ -24,14 +26,13 @@
   border-radius: 3px;
 }
 
-.about .socials li {
-  margin: 0;
-}
-
 .footer a {
   display: block;
   color: var(--darkBlue);
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 30px;
+}
+
+.email {
+  margin-bottom: 20px;
 }

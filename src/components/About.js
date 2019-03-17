@@ -9,7 +9,7 @@ class About extends Component {
   }
   render() {
     return (
-      <div className='section about'>
+      <div className='about'>
         <div className='wrapper'>
           <div className='imgContainer'>
             <img src={profilePic} alt='head shot of a real rad dude' />
@@ -61,7 +61,6 @@ class About extends Component {
             professional enquiries.
           </p>
         </div>
-        <Footer />
       </div>
     );
   }

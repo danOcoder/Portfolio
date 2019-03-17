@@ -37,7 +37,9 @@ class Footer extends Component {
               </a>
             </li>
           </ul>
-          <a href='mailto:info@danocoder.com'>info@danocoder.com</a>
+          <a className='email' href='mailto:info@danocoder.com'>
+            info@danocoder.com
+          </a>
         </div>
         <div className='imgContainer'>
           <img src={footerImg} alt='flat illustration, decorative' />

@@ -5,6 +5,12 @@
   background-color: var(--darkBlue);
   text-align: center;
   width: 100%;
+  height: 80vh;
+  border: 1px solid red;
+}
+
+.navColumn .wrapper {
+  width: 90%;
 }
 
 .navColumn .imgContainer {
