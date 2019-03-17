@@ -1,0 +1,29 @@
+@import './setup.css';
+@import '../App.css';
+
+section {
+  color: var(--darkBlue);
+  width: 100%;
+}
+
+section .wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 700ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 700ms ease-in;
+}
