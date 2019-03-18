@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import SwitchContainer from './components/SwitchContainer.js';
-import Footer from './components/Footer.js';
 import logo3 from './assets/logo3.png';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faTwitter,
+  faLinkedinIn,
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faTwitter, faLinkedinIn, faGithub);
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='wrapper'>
         <div className='flexParent'>
           <div className='navColumn'>
             <div className='wrapper'>
@@ -46,13 +55,29 @@ class App extends Component {
                   </li>
                 </ul>
               </nav>
+              <ul className='socials'>
+                <li>
+                  <a href='https://twitter.com/danOcoder'>
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
+                <li>
+                  <a href='https://www.linkedin.com/in/danocoder/'>
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                  </a>
+                </li>
+                <li>
+                  <a href='https://github.com/danOcoder'>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className='sectionWrapper'>
             <SwitchContainer />
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

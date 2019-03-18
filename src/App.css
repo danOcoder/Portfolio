@@ -11,26 +11,26 @@
 
 html {
   font-size: 125%;
-  /*
-    62.5% = units of 10px
-    93.7% = units of 15px
-    125% = units of 20px
-     */
 }
 
 body {
   font-family: var(--bodyFont);
+  background-color: var(--darkBlue);
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+.sectionWrapper {
+  position: relative;
 }
 
 .about,
 .contact,
 .work {
-  margin: 50px 0 60px;
+  padding: 50px 0 60px;
 }
 
 .flexParent {
@@ -94,7 +94,7 @@ li {
 }
 
 header .imgContainer {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
   width: 50%;
   border-bottom: 2px solid var(--purple);
@@ -110,26 +110,49 @@ header h2 {
 }
 
 .navList {
-  margin: 40px 0 60px 0;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.navList li:nth-of-type(-n + 4) {
+.socials {
+  width: 80%;
+  margin: 0 auto 60px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navList li a,
+.socials li a {
+  color: var(--purple);
+  font-size: 1.3rem;
+}
+
+.navList li {
   margin-bottom: 30px;
 }
 
 .navList li a {
-  color: var(--purple);
-  font-size: 1.3rem;
   padding: 3px;
 }
 
-.navList .active {
+.navList .active,
+.socials li a:hover {
   color: var(--darkBlue);
   background-color: var(--purple);
   border-radius: 3px;
+}
+
+.socials li a {
+  padding: 0 5px;
+}
+
+.socials li a:hover {
+  padding: 0 5px;
 }
 
 @media (min-width: 480px) {
@@ -145,7 +168,10 @@ header h2 {
 
   .contact .imgContainer,
   .about .imgContainer,
-  .work .imgContainer {
+  .work .imgContainer,
+  .copyWrap,
+  form {
+    margin: 0 auto 30px;
     width: 80%;
   }
 }
@@ -156,7 +182,9 @@ header h2 {
   }
   .contact .imgContainer,
   .about .imgContainer,
-  .work .imgContainer {
+  .work .imgContainer,
+  .copyWrap,
+  form {
     width: 70%;
   }
 }
@@ -172,15 +200,26 @@ header h2 {
 
   .sectionWrapper {
     width: 70%;
+    position: relative;
   }
 
   header .imgContainer {
+    margin-top: 60px;
     width: 60%;
+  }
+
+  .about,
+  .contact,
+  .work,
+  .socials {
+    padding-top: 60px;
   }
 
   .contact .imgContainer,
   .about .imgContainer,
-  .work .imgContainer {
+  .work .imgContainer,
+  .copyWrap,
+  form {
     width: 60%;
   }
 }

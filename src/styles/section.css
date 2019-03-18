@@ -4,6 +4,7 @@
 section {
   color: var(--darkBlue);
   width: 100%;
+  background-color: var(--white);
 }
 
 section .wrapper {
@@ -14,16 +15,23 @@ section .wrapper {
 
 .fade-enter {
   opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 700ms ease-in;
 }
 .fade-exit {
   opacity: 1;
+  transition: opacity 300ms ease-in;
 }
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
-  transition: opacity 700ms ease-in;
+}
+
+.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }

@@ -1,19 +1,20 @@
 import React from 'react';
-import { Route, NavLink, Switch, Redirect, withRouter } from 'react-router-dom';
+import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import About from '../components/About.js';
 import Work from '../components/Work.js';
 import Contact from '../components/Contact.js';
 import Skills from '../components/Skills.js';
-import Thanks from '../components/Thanks';
+import Thanks from '../components/Thanks.js';
+import Footer from '../components/Footer.js';
 import '../styles/section.css';
 
 const SwitchContainer = ({ location }) => {
   return (
-    <TransitionGroup>
+    <TransitionGroup className='route-section'>
       <CSSTransition
         key={location.key}
-        timeout={{ enter: 700, exit: 700 }}
+        timeout={{ enter: 300, exit: 300 }}
         classNames={'fade'}
       >
         <section>
@@ -26,6 +27,7 @@ const SwitchContainer = ({ location }) => {
             <Route path='/thanks' component={Thanks} />
             <Redirect to='/' />
           </Switch>
+          <Footer />
         </section>
       </CSSTransition>
     </TransitionGroup>

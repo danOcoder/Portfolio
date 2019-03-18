@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import '../styles/work.css';
 
 class HtmlWork extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div className='htmlWork'>

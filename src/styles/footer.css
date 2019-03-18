@@ -1,55 +1,7 @@
 @import './setup.css';
 @import '../App.css';
 
-.footer {
-  background-color: var(--purple);
-  padding-top: 30px;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto 25px;
-}
-
-.socials li a {
-  font-size: 1.7rem;
-  padding: 5px 10px;
-}
-
-.socials li a:hover {
-  color: var(--purple);
-  background-color: var(--darkBlue);
-  border-radius: 3px;
-}
-
-.footer a {
-  display: block;
-  color: var(--darkBlue);
-  font-size: 1rem;
-  text-align: center;
-}
-
-.email {
-  margin-bottom: 20px;
-}
-
-/**** screen meets or exceeds 768px ****/
-
-@media (min-width: 768px) {
-  .socials {
-    width: 70%;
-  }
-}
-
-/**** screen meets or exceeds 992px****/
-
-@media (min-width: 992px) {
-}
-
-/**** screen meets or exceeds 1400px ****/
-
-@media (min-width: 1400px) {
+footer .footer .imgContainer {
+  width: 100%;
+  border-radius: 0;
 }

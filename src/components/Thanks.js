@@ -3,9 +3,6 @@ import '../styles/contact.css';
 import lucky from '../assets/lucky.jpg';
 
 class Thanks extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div className='thanks'>
@@ -13,7 +10,7 @@ class Thanks extends Component {
           <div className='imgContainer'>
             <img src={lucky} alt='small dog' />
           </div>
-          <div className='thanksText'>
+          <div className='thanksText copyWrap'>
             <h2>Thanks!</h2>
             <p>
               Your message has been sent and I'll get back to you as soon as I

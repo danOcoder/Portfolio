@@ -16,10 +16,8 @@ import sass from '../assets/svg/sass.svg';
 import flash from '../assets/flash.jpg';
 import gulp from '../assets/svg/gulp.svg';
 import lucky from '../assets/lucky.jpg';
+
 class Skills extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div className='skills'>

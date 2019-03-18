@@ -12,31 +12,38 @@ class Contact extends Component {
           <div className='imgContainer'>
             <img src={lucky} alt='small dog' />
           </div>
-          <h2>Hi!</h2>
+          <div className='copyWrap'>
+            <h2>Hi!</h2>
+            <p>
+              If you would like to get in touch with me either fill out the
+              contact form or if you prefer shoot an email to{' '}
+              <span>
+                <a href='mailto:info@danocoder.com'>info@danocoder.com</a>
+              </span>
+            </p>
+          </div>
           <form
             action='http://www.focuspocus.io/magic/2f889601f87170169c2e6de87dfd7cd7'
             method='POST'
           >
-            <div className='contactInfo'>
-              <FloatedLabelInput
-                placeholder='Name*'
-                name='name'
-                id='name'
-                type='text'
-              />
-              <FloatedLabelInput
-                placeholder='Email*'
-                type='email'
-                id='email'
-                name='email'
-              />
-              <FloatedLabelInput
-                type='tel'
-                id='phoneNumber'
-                name='phoneNumber'
-                placeholder='Phone Number'
-              />
-            </div>
+            <FloatedLabelInput
+              placeholder='Name'
+              name='name'
+              id='name'
+              type='text'
+            />
+            <FloatedLabelInput
+              placeholder='Email'
+              type='email'
+              id='email'
+              name='email'
+            />
+            <FloatedLabelInput
+              type='tel'
+              id='phoneNumber'
+              name='phoneNumber'
+              placeholder='Phone Number'
+            />
             <FloatedLabelTextArea
               name='specialInstructions'
               id='specialInstructions'
