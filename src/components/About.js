@@ -12,28 +12,6 @@ class About extends Component {
           <div className='copyWrap'>
             <h2>About Dan</h2>
             <p>
-              Dan O’Connor is a Front End Web Developer living in
-              Kitchener-Waterloo. Having completed HackerYou College of
-              Technology’s Con-Ed courses in Web Development and JavaScript
-              fundamentals in 2018, and the full time bootcamp at the same in
-              March 2019 Dan possesses solid foundational skills in:
-            </p>
-            <ul>
-              <li>HTML5, CSS3, Sass and responsive design</li>
-              <li>JavaScript fundamentals, jQuery and using APIs</li>
-              <li>React</li>
-              <li>Firebase</li>
-              <li>Workflow automation and JavaScript tooling with Gulp</li>
-              <li>
-                Version control and open-sourcing code using Git and Github
-              </li>
-              <li>Paired programming and working in teams</li>
-              <li>Sublime Text & VS Code</li>
-              <li>Best practices for modern web development</li>
-              <li>Website accessibility requirements </li>
-            </ul>
-
-            <p>
               An engaging and resourceful professional, an overview of Dan’s
               career and experience illustrates a devotion to perpetual growth
               and a passion for exploring.

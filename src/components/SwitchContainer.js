@@ -7,6 +7,7 @@ import Contact from '../components/Contact.js';
 import Skills from '../components/Skills.js';
 import Thanks from '../components/Thanks.js';
 import Footer from '../components/Footer.js';
+import HomePage from '../components/HomePage.js';
 
 const SwitchContainer = ({ location }) => {
   return (
@@ -18,7 +19,7 @@ const SwitchContainer = ({ location }) => {
       >
         <section>
           <Switch>
-            <Route exact path='/' component={Skills} />
+            <Route exact path='/' component={HomePage} />
             <Route exact path='/skills' component={Skills} />
             <Route path='/about' component={About} />
             <Route path='/work' component={Work} />
