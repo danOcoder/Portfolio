@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FloatedLabelInput from './FloatedLabelInput.js';
 import FloatedLabelTextArea from './FloatedLabelTextArea.js';
-import '../styles/contact.css';
 import lucky from '../assets/lucky.jpg';
 
 class Contact extends Component {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/skills.css';
 import profilePic from '../assets/profilePicKracked.jpg';
 import html from '../assets/svg/html.svg';
 import ny from '../assets/ny.jpg';

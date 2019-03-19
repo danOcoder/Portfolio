@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/contact.css';
 
 class FloatedLabelInput extends Component {
   constructor(props) {

@@ -34,13 +34,13 @@ class App extends Component {
               <nav>
                 <ul className='navList'>
                   <li>
-                    <NavLink to='/skills' activeClassName='active'>
-                      Skills
+                    <NavLink to='/about' activeClassName='active'>
+                      About
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to='/about' activeClassName='active'>
-                      About
+                    <NavLink to='/skills' activeClassName='active'>
+                      Skills
                     </NavLink>
                   </li>
                   <li>

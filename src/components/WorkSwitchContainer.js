@@ -1,12 +1,10 @@
 import React from 'react';
-import { Route, NavLink, Switch, Redirect, withRouter } from 'react-router-dom';
+import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import HtmlWork from './HtmlWork.js';
 import JsWork from './JsWork.js';
 import ReactWork from './ReactWork.js';
 import pattern from '../assets/work.png';
-import '../styles/section.css';
-import '../styles/work.css';
 
 const workPlaceHolder = () => {
   return (

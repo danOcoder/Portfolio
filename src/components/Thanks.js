@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/contact.css';
 import lucky from '../assets/lucky.jpg';
 
 class Thanks extends Component {

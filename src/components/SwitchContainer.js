@@ -7,7 +7,6 @@ import Contact from '../components/Contact.js';
 import Skills from '../components/Skills.js';
 import Thanks from '../components/Thanks.js';
 import Footer from '../components/Footer.js';
-import '../styles/section.css';
 
 const SwitchContainer = ({ location }) => {
   return (

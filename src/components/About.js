@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/about.css';
 import profilePic from '../assets/profilePicKracked.jpg';
 
 class About extends Component {
