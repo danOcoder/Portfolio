@@ -1,32 +1,50 @@
 import React, { Component } from 'react';
 import potusQuotes from '../assets/reactSite.png';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faReact,
+  faJsSquare,
+  faCss3Alt
+} from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faReact, faJsSquare, faCss3Alt);
 
 class ReactWork extends Component {
   render() {
     return (
-      <div>
+      <div className='workWrap'>
         <div className='imgContainer'>
           <img src={potusQuotes} alt='decorative illustration' />
         </div>
         <div className='copyWrap'>
           <h2>Potus Quotes</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            sunt eius obcaecati nisi hic minus! Pariatur voluptas laudantium
-            eveniet velit distinctio laborum reiciendis quaerat consequuntur
-            quos itaque dolorem excepturi omnis adipisci veritatis ipsa ut
-            beatae quis cupiditate corporis, odio exercitationem? Deserunt
-            voluptate dolorum repudiandae, laudantium eligendi a debitis ab
-            commodi officia tempora, nemo tenetur culpa quisquam corrupti nisi
-            eaque eius.{' '}
-            <span>
-              <a href='#'>Live</a>
+            Potus Quotes is a web app that facilitates user access to quotes
+            that the current president of the United States has made in the
+            public domain. Built using React, JavaScript & CSS3. See it{' '}
+            <span className='bold'>
+              <a href='#' target='_blank'>
+                live
+              </a>
             </span>{' '}
             or on{' '}
-            <span>
-              <a href='#'>GitHub</a>
+            <span className='bold'>
+              <a href='#' target='_blank'>
+                GitHub
+              </a>
             </span>
           </p>
+          <span className='workIcons'>
+            <FontAwesomeIcon icon={faReact} />
+          </span>
+          <span className='workIcons'>
+            <FontAwesomeIcon icon={faJsSquare} />
+          </span>
+          <span className='workIcons'>
+            <FontAwesomeIcon icon={faCss3Alt} />
+          </span>
         </div>
       </div>
     );

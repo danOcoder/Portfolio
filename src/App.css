@@ -233,7 +233,8 @@ img {
 
 .contact .imgContainer,
 .about .imgContainer,
-.work .imgContainer {
+.work .imgContainer,
+.skills .imgContainer {
   margin-bottom: 30px;
 }
 
@@ -485,10 +486,14 @@ section .wrapper {
 
 .skills .wrapper {
   width: 90%;
+}
+
+.skillsIconWrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .homepage .imgContainer {
@@ -496,12 +501,12 @@ section .wrapper {
   border-radius: 0;
 }
 
-.skills .imgContainer {
+.skillIconContainer {
   flex-basis: 33.33%;
 }
 
-.skills .imgContainer {
-  padding: 20px;
+.skillIconContainer {
+  padding: 10px;
 }
 
 .iconContainer1,
@@ -523,23 +528,17 @@ section .wrapper {
 
 /**** Work ****/
 
+.workWrap:nth-of-type(-n + 2) {
+  padding-bottom: 30px;
+}
+
 .workIcons {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.workIcons a {
   font-size: 2.5rem;
-  padding: 5px 10px;
+  margin-right: 20px;
 }
 
-.workIcons .active {
-  color: var(--purple);
-  background-color: var(--darkBlue);
-  border-radius: 3px;
+.bold {
+  font-weight: bold;
 }
 
 @media (min-width: 480px) {
@@ -556,73 +555,74 @@ section .wrapper {
   .contact .imgContainer,
   .about .imgContainer,
   .work .imgContainer,
+  .skills .imgContainer,
+  .skillsIconWrapper,
   .copyWrap,
   form {
     margin: 0 auto 30px;
     width: 80%;
   }
 
-  .homepage .imgContainer,
-  .skills .imgContainer {
+  .homepage .imgContainer {
     flex-basis: 25%;
   }
 
   .homepage .imgContainer:nth-of-type(1) {
-    order: 2;
-  }
-
-  .homepage .imgContainer:nth-of-type(2) {
     order: 1;
   }
 
+  .homepage .imgContainer:nth-of-type(2) {
+    order: 2;
+  }
+
   .homepage .imgContainer:nth-of-type(3) {
-    order: 3;
+    order: 4;
   }
   .homepage .imgContainer:nth-of-type(4) {
-    order: 4;
+    order: 3;
   }
 
   .homepage .imgContainer:nth-of-type(5) {
-    order: 5;
-  }
-
-  .homepage .imgContainer:nth-of-type(6) {
     order: 6;
   }
 
+  .homepage .imgContainer:nth-of-type(6) {
+    order: 5;
+  }
+
   .homepage .imgContainer:nth-of-type(7) {
-    order: 8;
+    order: 7;
   }
   .homepage .imgContainer:nth-of-type(8) {
-    order: 7;
+    order: 8;
   }
 
   .homepage .imgContainer:nth-of-type(9) {
-    order: 10;
+    order: 9;
   }
   .homepage .imgContainer:nth-of-type(10) {
-    order: 9;
+    order: 10;
   }
 
   .homepage .imgContainer:nth-of-type(11) {
-    order: 11;
+    order: 12;
   }
   .homepage .imgContainer:nth-of-type(12) {
-    order: 12;
+    order: 11;
   }
 
   .homepage .imgContainer:nth-of-type(13) {
-    order: 13;
+    order: 14;
   }
   .homepage .imgContainer:nth-of-type(14) {
-    order: 14;
+    order: 13;
   }
 
   .homepage .imgContainer:nth-of-type(15) {
-    order: 16;
+    order: 15;
   }
   .homepage .imgContainer:nth-of-type(16) {
-    order: 15;
+    order: 16;
   }
 }
 
@@ -633,9 +633,15 @@ section .wrapper {
   .contact .imgContainer,
   .about .imgContainer,
   .work .imgContainer,
+  .skills .imgContainer,
+  .skillsIconWrapper,
   .copyWrap,
   form {
     width: 70%;
+  }
+
+  .skillIconContainer {
+    padding: 20px;
   }
 }
 
@@ -658,16 +664,23 @@ section .wrapper {
     width: 60%;
   }
 
+  .skillIconContainer {
+    padding: 10px;
+  }
+
   .about,
   .contact,
   .work,
-  .socials {
+  .socials,
+  .skills {
     padding-top: 60px;
   }
 
   .contact .imgContainer,
   .about .imgContainer,
   .work .imgContainer,
+  .skills .imgContainer,
+  .skillsIconWrapper,
   .copyWrap,
   form {
     width: 60%;

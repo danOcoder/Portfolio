@@ -17,19 +17,17 @@ class About extends Component {
               and a passion for exploring.
             </p>
             <p>
-              Prior to his present career, Dan worked variously in the fields of
-              sales, construction, and sanitation. Along the way acquiring a
-              rich tool kit of transferable skills in project development,
-              management, administration and workflow optimization. Dan has also
-              built solid strategies for effective engagement with all staff and
-              stakeholders around him. Dan enjoyed success in these roles,
-              however after developing an interest in the world of programming
-              it became clear to him that this was where his true passion lay.
+              Prior to his transition into Web Development, Dan worked variously
+              in the fields of sales, construction, and environmental solutions.
+              Along the way acquiring a rich tool kit of transferable skills in
+              project development, management, administration and workflow
+              optimization. Dan has also built solid strategies for effective
+              engagement with all staff and stakeholders around him. Dan enjoyed
+              success in these roles, however after developing an interest in
+              the world of programming it became clear to him that this was
+              where his true passion lay.
             </p>
-            <p>
-              At present, Dan is currently most excited about completing his
-              search for a junior dev role and joining an exciting new team.
-            </p>
+
             <p>
               When away from work Dan can be found spending time with family and
               friends, running on one of KW’s many great trails, listening to

@@ -14,9 +14,9 @@ class Contact extends Component {
           <div className='copyWrap'>
             <h2>Hi!</h2>
             <p>
-              If you would like to get in touch with me either fill out the
+              If you would like to get in touch with Dan either fill out the
               contact form or if you prefer shoot an email to{' '}
-              <span>
+              <span className='bold'>
                 <a href='mailto:info@danocoder.com'>info@danocoder.com</a>
               </span>
             </p>

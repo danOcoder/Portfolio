@@ -15,39 +15,41 @@ class HomePage extends Component {
     return (
       <div className='skills'>
         <div className='wrapper'>
+          <div className='imgContainer'>
+            <img src={work} alt='illustration aesthetic only' />
+          </div>
           <div className='copyWrap'>
-            <div className='imgContainer'>
-              <img src={work} alt='illustration aesthetic only' />
-            </div>
             <h2>Skills</h2>
             <p>To pay the bills..</p>
           </div>
-          <div className='imgContainer'>
-            <img src={html} alt='html5 icon' />
-          </div>
-          <div className='imgContainer'>
-            <img src={css} alt='css3 logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={js} alt='javascript logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={jquery} alt='css3 logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={react} alt='react logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={git} alt='git logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={sass} alt='sass logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={gulp} alt='gulp logo' />
-          </div>
-          <div className='imgContainer'>
-            <img src={vs} alt='vs code logo' />
+          <div className='skillsIconWrapper'>
+            <div className='skillIconContainer'>
+              <img src={html} alt='html5 icon' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={css} alt='css3 logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={js} alt='javascript logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={jquery} alt='css3 logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={react} alt='react logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={git} alt='git logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={sass} alt='sass logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={gulp} alt='gulp logo' />
+            </div>
+            <div className='skillIconContainer'>
+              <img src={vs} alt='vs code logo' />
+            </div>
           </div>
         </div>
       </div>

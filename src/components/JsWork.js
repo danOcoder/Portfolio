@@ -1,32 +1,46 @@
 import React, { Component } from 'react';
 import overratedUnderrated from '../assets/jsSite.png';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faJsSquare, faSass } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faJsSquare, faSass);
 
 class JsWork extends Component {
   render() {
     return (
-      <div>
+      <div className='workWrap'>
         <div className='imgContainer'>
           <img src={overratedUnderrated} alt='decorative illustration' />
         </div>
         <div className='copyWrap'>
           <h2>Overrated or Underrated?</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            sunt eius obcaecati nisi hic minus! Pariatur voluptas laudantium
-            eveniet velit distinctio laborum reiciendis quaerat consequuntur
-            quos itaque dolorem excepturi omnis adipisci veritatis ipsa ut
-            beatae quis cupiditate corporis, odio exercitationem? Deserunt
-            voluptate dolorum repudiandae, laudantium eligendi a debitis ab
-            commodi officia tempora, nemo tenetur culpa quisquam corrupti nisi
-            eaque eius.{' '}
-            <span>
-              <a href='#'>Live</a>
+            Think brussels sprouts are underrated? Then this is the web app for
+            you. Built using JQuery, JavaScript & Sass, results are stored &
+            returned from my own API created using Sheetsu. See it{' '}
+            <span className='bold'>
+              <a href='#' target='_blank'>
+                live
+              </a>
             </span>{' '}
             or on{' '}
-            <span>
-              <a href='#'>GitHub</a>
+            <span className='bold'>
+              <a href='#' target='_blank'>
+                GitHub
+              </a>
             </span>
           </p>
+          <span className='workIcons'>
+            <i class='devicon-jquery-plain' />
+          </span>
+          <span className='workIcons'>
+            <FontAwesomeIcon icon={faJsSquare} />
+          </span>
+          <span className='workIcons'>
+            <FontAwesomeIcon icon={faSass} />
+          </span>
         </div>
       </div>
     );
