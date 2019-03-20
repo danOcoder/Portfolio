@@ -17,20 +17,20 @@ class HtmlWork extends Component {
         <div className='copyWrap'>
           <h2>Bar-One</h2>
           <p>
-            Multi Page PSD conversion with floats & flexbox. Built using HTML5 &
-            Sass. See it{' '}
+            Multi Page PSD conversion using floats & flexbox. See it{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
+              <a href='http://danocoder.com/bar-one/' target='_blank'>
                 live
               </a>
             </span>{' '}
             or on{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
-                GitHub
+              <a href='https://github.com/danOcoder/Bar-One' target='_blank'>
+                GitHub.
               </a>
             </span>
           </p>
+          <p>HTML5 | Sass</p>
           <span className='workIcons'>
             <FontAwesomeIcon icon={faHtml5} />
           </span>

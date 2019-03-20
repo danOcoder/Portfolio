@@ -23,19 +23,24 @@ class ReactWork extends Component {
           <p>
             Potus Quotes is a web app that facilitates user access to quotes
             that the current president of the United States has made in the
-            public domain. Built using React, JavaScript & CSS3. See it{' '}
+            public domain. See it{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
+              <a href='http://danocoder.com/potus-quotes/' target='_blank'>
                 live
               </a>
             </span>{' '}
             or on{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
+              <a
+                href='https://github.com/danOcoder/Potus-Quotes'
+                target='_blank'
+              >
                 GitHub
               </a>
             </span>
+            .
           </p>
+          <p>React | JavaScript | CSS3 | API</p>
           <span className='workIcons'>
             <FontAwesomeIcon icon={faReact} />
           </span>

@@ -405,7 +405,6 @@ textarea#specialInstructions {
 
 input::placeholder,
 textarea::placeholder {
-  border: 1px solid blue;
   color: var(--purple);
 }
 

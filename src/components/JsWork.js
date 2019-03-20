@@ -18,20 +18,27 @@ class JsWork extends Component {
           <h2>Overrated or Underrated?</h2>
           <p>
             Think brussels sprouts are underrated? Then this is the web app for
-            you. Built using JQuery, JavaScript & Sass, results are stored &
-            returned from my own API created using Sheetsu. See it{' '}
+            you. See it{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
+              <a
+                href='http://danocoder.com/overrated-underrated/'
+                target='_blank'
+              >
                 live
               </a>
             </span>{' '}
             or on{' '}
             <span className='bold'>
-              <a href='#' target='_blank'>
+              <a
+                href='https://github.com/danOcoder/Overrated-Underrated'
+                target='_blank'
+              >
                 GitHub
               </a>
             </span>
+            .
           </p>
+          <p>JQuery | JavaScript | Sass | API</p>
           <span className='workIcons'>
             <i class='devicon-jquery-plain' />
           </span>
