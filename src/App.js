@@ -23,55 +23,57 @@ class App extends Component {
             <div className='wrapper'>
               <header>
                 <div className='imgContainer'>
-                  <img src={logo3} alt='Dan OConnor Web Development logo' />
+                  <NavLink to='/'>
+                    <img src={logo3} alt='Dan OConnor Web Development logo' />
+                  </NavLink>
                 </div>
                 <h1>
                   Dan <br />
                   O'Connor
                 </h1>
                 <h2>Web Development</h2>
-              </header>
-              <nav>
-                <ul className='navList'>
+                <nav>
+                  <ul className='navList'>
+                    <li>
+                      <NavLink to='/about' activeClassName='active'>
+                        About
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to='/skills' activeClassName='active'>
+                        Skills
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to='/work' activeClassName='active'>
+                        Work
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to='/contact' activeClassName='active'>
+                        Contact
+                      </NavLink>
+                    </li>
+                  </ul>
+                </nav>
+                <ul className='socials'>
                   <li>
-                    <NavLink to='/about' activeClassName='active'>
-                      About
-                    </NavLink>
+                    <a href='https://twitter.com/danOcoder'>
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
                   </li>
                   <li>
-                    <NavLink to='/skills' activeClassName='active'>
-                      Skills
-                    </NavLink>
+                    <a href='https://www.linkedin.com/in/danocoder/'>
+                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
                   </li>
                   <li>
-                    <NavLink to='/work' activeClassName='active'>
-                      Work
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to='/contact' activeClassName='active'>
-                      Contact
-                    </NavLink>
+                    <a href='https://github.com/danOcoder'>
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
                   </li>
                 </ul>
-              </nav>
-              <ul className='socials'>
-                <li>
-                  <a href='https://twitter.com/danOcoder'>
-                    <FontAwesomeIcon icon={faTwitter} />
-                  </a>
-                </li>
-                <li>
-                  <a href='https://www.linkedin.com/in/danocoder/'>
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                  </a>
-                </li>
-                <li>
-                  <a href='https://github.com/danOcoder'>
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </li>
-              </ul>
+              </header>
             </div>
           </div>
           <div className='sectionWrapper'>

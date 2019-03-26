@@ -5,7 +5,6 @@ import About from '../components/About.js';
 import Work from '../components/Work.js';
 import Contact from '../components/Contact.js';
 import Skills from '../components/Skills.js';
-import Thanks from '../components/Thanks.js';
 import Footer from '../components/Footer.js';
 import HomePage from '../components/HomePage.js';
 
@@ -24,7 +23,6 @@ const SwitchContainer = ({ location }) => {
             <Route path='/about' component={About} />
             <Route path='/work' component={Work} />
             <Route path='/contact' component={Contact} />
-            <Route path='/thanks' component={Thanks} />
             <Redirect to='/' />
           </Switch>
           <Footer />

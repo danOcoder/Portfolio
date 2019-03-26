@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import potusQuotes from '../assets/reactSite.png';
+import qpf from '../assets/quickFlickPicker.jpg';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -16,23 +16,44 @@ class ReactWork extends Component {
     return (
       <div className='workWrap'>
         <div className='imgContainer'>
-          <img src={potusQuotes} alt='decorative illustration' />
+          <img src={qpf} alt='decorative illustration' />
         </div>
         <div className='copyWrap'>
-          <h2>Potus Quotes</h2>
+          <h2>Quick Flick Picker</h2>
           <p>
-            Potus Quotes is a web app that facilitates user access to quotes
-            that the current president of the United States has made in the
-            public domain. See it{' '}
+            Quick Flick Picker allows users to create movie lists & filter them
+            based on genre & duration using a natural language form. This was a
+            group project involving{' '}
             <span className='bold'>
-              <a href='http://danocoder.com/potus-quotes/' target='_blank'>
+              <a href='http://jennamaaskant.com/' target='_blank'>
+                Jenna Maaskant
+              </a>
+            </span>
+            ,{' '}
+            <span className='bold'>
+              <a href='http://dennismcleodcodes.com/' target='_blank'>
+                Dennis McLeod
+              </a>
+            </span>
+            ,{' '}
+            <span className='bold'>
+              <a href='http://jaimiejewell.com/' target='_blank'>
+                Jamie Jewell
+              </a>
+            </span>{' '}
+            & myself. See it{' '}
+            <span className='bold'>
+              <a
+                href='https://react-firebase-daeaf.firebaseapp.com'
+                target='_blank'
+              >
                 live
               </a>
             </span>{' '}
             or on{' '}
             <span className='bold'>
               <a
-                href='https://github.com/danOcoder/Potus-Quotes'
+                href='https://github.com/quick-flick-picker/quickFlickPicker'
                 target='_blank'
               >
                 GitHub
