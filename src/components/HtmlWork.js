@@ -19,7 +19,10 @@ class HtmlWork extends Component {
           <p>
             Multi Page PSD conversion using floats & flexbox. See it{' '}
             <span className='bold'>
-              <a href='http://danocoder.com/bar-one/' target='_blank'>
+              <a
+                href='https://danocoder.github.io/bar-one/index.html'
+                target='_blank'
+              >
                 live
               </a>
             </span>{' '}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import SwitchContainer from './components/SwitchContainer.js';
 import logo3 from './assets/logo3.png';
@@ -23,9 +24,16 @@ class App extends Component {
             <div className='wrapper'>
               <header>
                 <div className='imgContainer'>
-                  <NavLink to='/'>
-                    <img src={logo3} alt='Dan OConnor Web Development logo' />
-                  </NavLink>
+                  <Link
+                    to='sectionWrapper'
+                    spy={true}
+                    smooth={true}
+                    duration={900}
+                  >
+                    <NavLink to='/'>
+                      <img src={logo3} alt='Dan OConnor Web Development logo' />
+                    </NavLink>
+                  </Link>
                 </div>
                 <h1>
                   Dan <br />
@@ -35,24 +43,52 @@ class App extends Component {
                 <nav>
                   <ul className='navList'>
                     <li>
-                      <NavLink to='/about' activeClassName='active'>
-                        About
-                      </NavLink>
+                      <Link
+                        to='sectionWrapper'
+                        spy={true}
+                        smooth={true}
+                        duration={900}
+                      >
+                        <NavLink to='/about' activeClassName='active'>
+                          About
+                        </NavLink>
+                      </Link>
                     </li>
                     <li>
-                      <NavLink to='/skills' activeClassName='active'>
-                        Skills
-                      </NavLink>
+                      <Link
+                        to='sectionWrapper'
+                        spy={true}
+                        smooth={true}
+                        duration={900}
+                      >
+                        <NavLink to='/skills' activeClassName='active'>
+                          Skills
+                        </NavLink>
+                      </Link>
                     </li>
                     <li>
-                      <NavLink to='/work' activeClassName='active'>
-                        Work
-                      </NavLink>
+                      <Link
+                        to='sectionWrapper'
+                        spy={true}
+                        smooth={true}
+                        duration={900}
+                      >
+                        <NavLink to='/work' activeClassName='active'>
+                          Work
+                        </NavLink>
+                      </Link>
                     </li>
                     <li>
-                      <NavLink to='/contact' activeClassName='active'>
-                        Contact
-                      </NavLink>
+                      <Link
+                        to='sectionWrapper'
+                        spy={true}
+                        smooth={true}
+                        duration={900}
+                      >
+                        <NavLink to='/contact' activeClassName='active'>
+                          Contact
+                        </NavLink>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

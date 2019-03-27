@@ -21,7 +21,7 @@ class JsWork extends Component {
             you. See it{' '}
             <span className='bold'>
               <a
-                href='http://danocoder.com/overrated-underrated/'
+                href='https://danocoder.github.io/overrated-underrated/'
                 target='_blank'
               >
                 live

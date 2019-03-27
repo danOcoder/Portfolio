@@ -263,6 +263,43 @@ li {
   font-size: 0.9rem;
 }
 
+/**** Section ****/
+
+section {
+  color: var(--darkBlue);
+  width: 100%;
+  background-color: var(--white);
+}
+
+section .wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 /**** NAV ****/
 
 .navColumn {
@@ -322,7 +359,7 @@ header h2 {
   padding: 3px;
 }
 
-.navList .active,
+.navList li a .active,
 .socials li a:hover {
   color: var(--darkBlue);
   background-color: var(--purple);
@@ -356,25 +393,14 @@ header h2 {
 }
 
 /**** Contact ****/
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.contact .copyWrap {
+  margin-bottom: 40px;
 }
 
 input#submit {
   display: block;
   margin: 0 auto;
-}
-
-input#name,
-input#email,
-input#phoneNumber,
-textarea#specialInstructions {
-  border-radius: 0 0 0 3px;
-}
-
-input#submit {
   border-radius: 3px;
   border: none;
   background-color: var(--darkBlue);
@@ -392,6 +418,7 @@ input#email,
 input#phoneNumber,
 textarea#specialInstructions {
   margin-bottom: 60px;
+  border-radius: 0 0 0 3px;
   width: 100%;
   font-family: var(--bodyFont);
   font-size: 0.9rem;
@@ -425,53 +452,11 @@ label.activeField {
   color: var(--purple);
 }
 
-.thanksText {
-  margin-top: 80px;
-  text-align: center;
-}
-
 /**** Footer ****/
 
 footer .footer .imgContainer {
   width: 100%;
   border-radius: 0;
-}
-
-/**** Section ****/
-
-section {
-  color: var(--darkBlue);
-  width: 100%;
-  background-color: var(--white);
-}
-
-section .wrapper {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.fade-enter {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-.fade-enter.fade-enter-active {
-  opacity: 1;
-}
-.fade-exit {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0.01;
-}
-
-.route-section {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 /**** Skills ****/
@@ -502,9 +487,6 @@ section .wrapper {
 
 .skillIconContainer {
   flex-basis: 33.33%;
-}
-
-.skillIconContainer {
   padding: 10px;
 }
 
