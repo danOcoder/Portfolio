@@ -178,6 +178,8 @@ a {
   list-style-type: none;
 }
 
+/**** Global styles ****/
+
 :root {
   --lightPurple: #98878f;
   --purple: #985e6d;
