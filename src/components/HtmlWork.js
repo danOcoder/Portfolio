@@ -11,9 +11,14 @@ class HtmlWork extends Component {
   render() {
     return (
       <div className='workWrap'>
-        <div className='imgContainer'>
-          <img src={barOne} alt='decorative illustration' />
-        </div>
+        <a
+          href='https://danocoder.github.io/bar-one/index.html'
+          target='_blank'
+        >
+          <div className='imgContainer'>
+            <img src={barOne} alt='decorative illustration' />
+          </div>
+        </a>
         <div className='copyWrap'>
           <h2>Bar-One</h2>
           <p>

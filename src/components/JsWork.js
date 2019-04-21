@@ -11,9 +11,14 @@ class JsWork extends Component {
   render() {
     return (
       <div className='workWrap'>
-        <div className='imgContainer'>
-          <img src={overratedUnderrated} alt='decorative illustration' />
-        </div>
+        <a
+          href='https://danocoder.github.io/overrated-underrated/'
+          target='_blank'
+        >
+          <div className='imgContainer'>
+            <img src={overratedUnderrated} alt='decorative illustration' />
+          </div>
+        </a>
         <div className='copyWrap'>
           <h2>Overrated or Underrated?</h2>
           <p>

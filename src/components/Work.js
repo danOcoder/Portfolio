@@ -8,9 +8,9 @@ class Work extends Component {
     return (
       <div className='work'>
         <div className='wrapper'>
-          <ReactWork />
           <JsWork />
           <HtmlWork />
+          <ReactWork />
         </div>
       </div>
     );

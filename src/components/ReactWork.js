@@ -15,9 +15,11 @@ class ReactWork extends Component {
   render() {
     return (
       <div className='workWrap'>
-        <div className='imgContainer'>
-          <img src={qpf} alt='decorative illustration' />
-        </div>
+        <a href='https://react-firebase-daeaf.firebaseapp.com' target='_blank'>
+          <div className='imgContainer'>
+            <img src={qpf} alt='decorative illustration' />
+          </div>
+        </a>
         <div className='copyWrap'>
           <h2>Quick Flick Picker</h2>
           <p>
