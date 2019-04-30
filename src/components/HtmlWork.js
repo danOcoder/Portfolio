@@ -22,7 +22,7 @@ class HtmlWork extends Component {
         <div className='copyWrap'>
           <h2>Bar-One</h2>
           <p>
-            Multi Page PSD conversion using floats & flexbox. See it{' '}
+            Multi Page PSD conversion. See it{' '}
             <span className='bold'>
               <a
                 href='https://danocoder.github.io/bar-one/index.html'

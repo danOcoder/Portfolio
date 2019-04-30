@@ -201,7 +201,6 @@ body {
 }
 
 .wrapper {
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -275,7 +274,6 @@ section {
 
 section .wrapper {
   width: 90%;
-  max-width: 1400px;
   margin: 0 auto;
 }
 

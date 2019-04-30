@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import overratedUnderrated from '../assets/jsSite.png';
+import SleepEfficiencyCalculator from '../assets/jsWork.jpg';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -12,21 +12,24 @@ class JsWork extends Component {
     return (
       <div className='workWrap'>
         <a
-          href='https://danocoder.github.io/overrated-underrated/'
+          href='https://danocoder.github.io/sleep-efficiency-calculator/'
           target='_blank'
         >
           <div className='imgContainer'>
-            <img src={overratedUnderrated} alt='decorative illustration' />
+            <img
+              src={SleepEfficiencyCalculator}
+              alt='decorative illustration'
+            />
           </div>
         </a>
         <div className='copyWrap'>
-          <h2>Overrated or Underrated?</h2>
+          <h2>Sleep Efficiency Calculator</h2>
           <p>
-            Think brussels sprouts are underrated? Then this is the web app for
-            you. See it{' '}
+            Calculate your sleep efficiency - the percentage of time spent
+            asleep while in bed. See it{' '}
             <span className='bold'>
               <a
-                href='https://danocoder.github.io/overrated-underrated/'
+                href='https://danocoder.github.io/sleep-efficiency-calculator/'
                 target='_blank'
               >
                 live
@@ -35,7 +38,7 @@ class JsWork extends Component {
             or on{' '}
             <span className='bold'>
               <a
-                href='https://github.com/danOcoder/Overrated-Underrated'
+                href='https://github.com/danOcoder/sleep-efficiency-calculator'
                 target='_blank'
               >
                 GitHub
@@ -43,7 +46,7 @@ class JsWork extends Component {
             </span>
             .
           </p>
-          <p>JQuery | JavaScript | Sass | API</p>
+          <p>JQuery | JavaScript | Sass </p>
           <span className='workIcons'>
             <i class='devicon-jquery-plain' />
           </span>
